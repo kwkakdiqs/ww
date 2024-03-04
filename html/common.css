@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url(./webfont.css);
+/* 초기화 */
+* { box-sizing: border-box; }
+body, h1, h2, h3, h4, p, ul { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+hr { display: none; }
+.hidden { position: absolute; clip: rect(0 0 0 0); 
+         overflow: hidden; width: 1px; margin: -1px; }
+
+    
+/* 웹폰트 - pretendard */
+body { width: 962px; margin: 8px auto 0; font-family: 'Pretendard-Regular'; 
+       border: 1px solid #e7e7e7; 
+       background: linear-gradient(#87ceeb, #fff 800px) no-repeat; }
+/* 헤더 */
+#header { height: 279px; background: url(../images/bg_header.png) no-repeat center / cover; }
+#header h1 { padding: 35px 0 0 25px; font-size: 45px; color: #ff0;  }
+/* GNB */
+#gnb ul { display: flex; }
+#gnb ul li { width: 25%; }
+#gnb ul li a { display: block; line-height: 60px; text-align: center; 
+               background: #006600; color: #fff; }
+/* 메인본문 */
+#content { width: 740px; float: left; background: #fff; }
+#introduce { padding: 28px 10px; }
+#introduce h3 { margin: 13px 0 20px; }
+#introduce p { margin-bottom: 15px; }
+/* 사이드사진 */
+#photo { width: 220px; float: right; padding: 20px 0 8px; text-align: center;
+         background: #ddffdd;  }
+/* 푸터 */
+#footer { clear: both; padding: 20px 0; text-align: center; 
+          background: #061f1f; color: #fff; }
+/* 600-1023 */

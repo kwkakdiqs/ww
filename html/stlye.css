@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url(webfont.css);
+
+/* 초기화 */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hidden {
+    position: absolute;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* 전체 */
+body {
+    background: linear-gradient(180deg, #87ceeb, #fff 800px) no-repeat;
+    font-family: 'Pretendard-Regular';
+    width: 962px;
+    border: 1px solid #e7e7e7;
+    margin: 8px auto 0;
+}
+
+/* 헤더 */
+#header {
+    background: url(images/bg_header.png) no-repeat center / cover;
+    height: 279px;
+}
+
+#header h1 {
+    color: #ffff00;
+    font-size: 45px;
+    padding: 35px 0 0 25px;
+}
+
+/* 네비 */
+#gnb ul {
+    display: flex;
+}
+
+#gnb ul li {
+    width: 25%;
+}
+
+#gnb ul li a {
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    background: #006600;
+    color: #fff;
+}
+
+/* 메인 */
+
+#content {
+    width: 740px;
+    float: left;
+    background: #fff;
+}
+
+#content > section {
+    padding: 28px 10px;
+}
+
+h3 {
+    margin: 13px 0 20px;
+}
+
+#content p {
+    margin-bottom: 15px;
+}
+
+/* 사이드 */
+#aside {
+    width: 220px;
+    float: right;
+    padding: 20px 0 8px;
+    text-align: center;
+    background: #ddffdd;
+}
+
+/* 푸터 */
+#footer {
+    clear: both;
+    padding: 20px 0;
+    text-align: center;
+    background: #061f1f;
+    color: #fff;
+}
+
+/* 600-1023 */
+@media screen and (max-width:1023px) {
+    body {
+        width: 582px;
+    }
+
+    #content {
+        width: auto; float: none;
+    }
+
+    #aside {
+        width: auto; float: none;
+    }
+
+    #aside img {
+        width: 178px;
+    }
+
+}
+
+/* 599 */
+@media screen and (max-width:599px) {
+    body{width: 100%; margin: 0; border: 0; }
+    #header {background: none; height: auto; background: #061f1f;}
+    #header h1 {padding: 10px 0 20px 15px; font-size: 30px;}
+    #gnb ul {display: block; padding: 14px 20px; background: #fff;}
+    #gnb ul li {width: auto; margin-bottom: 10px;}
+    #gnb ul li a {background-color: #fff; color: #000; border-radius: 10px; border: 1px solid #ccc;}
+    #aside { background-color: #fff;}
+    #aside img {width: 90%;}
+    #footer {}
+}
